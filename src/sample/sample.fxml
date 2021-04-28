@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="787.0" styleClass="body" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <TabPane prefHeight="851.0" prefWidth="852.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab text="单选题管理">
+               <content>
+                  <TabPane prefHeight="822.0" prefWidth="852.0" side="LEFT" tabClosingPolicy="UNAVAILABLE">
+                    <tabs>
+                      <Tab text="添加单选试题">
+                        <content>
+                          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="761.0" prefWidth="819.0">
+                                 <children>
+                                    <TextField fx:id="number" layoutX="250.0" layoutY="50.0" prefHeight="30.0" prefWidth="440.0" />
+                                    <TextField fx:id="content" layoutX="250.0" layoutY="100.0" prefHeight="150.0" prefWidth="440.0" />
+                                    <TextField fx:id="imageName" layoutX="250.0" layoutY="300.0" prefHeight="30.0" prefWidth="440.0" />
+                                     <TextField fx:id="optionA" layoutX="250.0" layoutY="350.0" prefHeight="30.0" prefWidth="440.0" />
+                                     <TextField fx:id="optionB" layoutX="250.0" layoutY="400.0" prefHeight="30.0" prefWidth="440.0" />
+                                     <TextField fx:id="optionC" layoutX="250.0" layoutY="450.0" prefHeight="30.0" prefWidth="440.0" />
+                                     <TextField fx:id="optionD" layoutX="250.0" layoutY="500.0" prefHeight="30.0" prefWidth="440.0" />
+                                     <TextField fx:id="answer" layoutX="250.0" layoutY="550.0" prefHeight="30.0" prefWidth="440.0" />
+                                    <Label layoutX="75.0" layoutY="50.0" styleClass="font-unit" text="编号:" />
+                                    <Label layoutX="75.0" layoutY="100.0" styleClass="font-unit" text="试题内容：" />
+                                    <Label layoutX="75.0" layoutY="300.0" styleClass="font-unit" text="图片名：" />
+                                    <Label layoutX="75.0" layoutY="350.0" styleClass="font-unit" text="选项A:" />
+                                    <Label layoutX="75.0" layoutY="400.0" styleClass="font-unit" text="选项B:" />
+                                    <Label layoutX="75.0" layoutY="450.0" styleClass="font-unit" text="选项C：" />
+                                     <Label layoutX="75.0" layoutY="500.0" styleClass="font-unit" text="选项D：" />
+                                    <Label layoutX="75.0" layoutY="550.0" styleClass="font-unit" text="正确答案:" />
+                                    <Label layoutX="75.0" layoutY="600.0" styleClass="font-unit" text="添加试题：" />
+                                    <Button layoutX="250.0" layoutY="605.0" mnemonicParsing="false" onMouseClicked="#addChoiceItem" prefHeight="35.0" prefWidth="190.0" text="添加试题" />
+                                 </children>
+                          </AnchorPane>
+                        </content>
+                      </Tab>
+                      <Tab text="更新单选试题">
+                        <content>
+                          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="200.0" prefWidth="200.0">
+                                 <children>
+                                     <TextField fx:id="updateNumber" layoutX="250.0" layoutY="50.0" prefHeight="30.0" prefWidth="440.0" />
+                                     <TextField fx:id="number2" layoutX="250.0" layoutY="150.0" prefHeight="30.0" prefWidth="440.0" />
+                                     <TextField fx:id="content2" layoutX="250.0" layoutY="200.0" prefHeight="80.0" prefWidth="440.0" />
+                                     <TextField fx:id="imageName2" layoutX="250.0" layoutY="300.0" prefHeight="30.0" prefWidth="440.0" />
+                                     <TextField fx:id="optionA2" layoutX="250.0" layoutY="350.0" prefHeight="30.0" prefWidth="440.0" />
+                                     <TextField fx:id="optionB2" layoutX="250.0" layoutY="400.0" prefHeight="30.0" prefWidth="440.0" />
+                                     <TextField fx:id="optionC2" layoutX="250.0" layoutY="450.0" prefHeight="30.0" prefWidth="440.0" />
+                                     <TextField fx:id="optionD2" layoutX="250.0" layoutY="500.0" prefHeight="30.0" prefWidth="440.0" />
+                                     <TextField fx:id="answer2" layoutX="250.0" layoutY="550.0" prefHeight="30.0" prefWidth="440.0" />
+                                     <Label layoutX="75.0" layoutY="50.0" styleClass="font-unit" text="需要更新题目编号:" />
+                                     <Label layoutX="75.0" layoutY="150.0" styleClass="font-unit" text="编号:" />
+                                     <Label layoutX="75.0" layoutY="200.0" styleClass="font-unit" text="试题内容：" />
+                                     <Label layoutX="75.0" layoutY="300.0" styleClass="font-unit" text="图片名：" />
+                                     <Label layoutX="75.0" layoutY="350.0" styleClass="font-unit" text="选项A:" />
+                                     <Label layoutX="75.0" layoutY="400.0" styleClass="font-unit" text="选项B:" />
+                                     <Label layoutX="75.0" layoutY="450.0" styleClass="font-unit" text="选项C：" />
+                                     <Label layoutX="75.0" layoutY="500.0" styleClass="font-unit" text="选项D：" />
+                                     <Label layoutX="75.0" layoutY="550.0" styleClass="font-unit" text="正确答案:" />
+                                     <Label layoutX="75.0" layoutY="600.0" styleClass="font-unit" text="添加试题：" />
+                                     <Button layoutX="250.0" layoutY="605.0" mnemonicParsing="false" onMouseClicked="#updateChoiceItem" prefHeight="35.0" prefWidth="190.0" text="更新题目" />
+                                    <Button layoutX="250.0" layoutY="100.0" mnemonicParsing="false" onMouseClicked="#QueryUpdate" prefHeight="35.0" prefWidth="190.0" text="查找题目" />
+                                 </children></AnchorPane>
+                        </content>
+                      </Tab>
+                        <Tab text="删除单选试题">
+                           <content>
+                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="200.0" prefWidth="200.0">
+                                 <children>
+                                     <TextField fx:id="deleteNumber" layoutX="250.0" layoutY="200.0" prefHeight="30.0" prefWidth="440.0" />
+                                     <Label layoutX="75.0" layoutY="200.0" styleClass="font-unit" text="需要删除的题号:" />
+                                     <Button layoutX="250.0" layoutY="605.0" mnemonicParsing="false" onMouseClicked="#deleteChoiceItem" prefHeight="35.0" prefWidth="190.0" text="删除试题" />
+                                 </children></AnchorPane>
+
+                           </content>
+                        </Tab>
+                        <Tab text="查询单选试题">
+                           <content>
+                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="200.0" prefWidth="200.0">
+                                 <children>
+                                     <Button layoutX="72.0" layoutY="57.0" mnemonicParsing="false" onMouseClicked="#selectChoiceItem" prefHeight="35.0" prefWidth="190.0" text="查询全部单选试题" />
+                                 </children></AnchorPane>
+                           </content>
+                        </Tab>
+                    </tabs>
+                  </TabPane>
+               </content>
+          </Tab>
+          <Tab text="判断题管理">
+               <content>
+                  <TabPane prefHeight="200.0" prefWidth="200.0" side="LEFT" tabClosingPolicy="UNAVAILABLE">
+                    <tabs>
+                      <Tab text="添加判断试题">
+                        <content>
+                          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                 <children>
+                                         <TextField fx:id="number3" layoutX="250.0" layoutY="50.0" prefHeight="30.0" prefWidth="440.0" />
+                                         <TextField fx:id="content3" layoutX="250.0" layoutY="100.0" prefHeight="150.0" prefWidth="440.0" />
+                                         <TextField fx:id="imageName3" layoutX="250.0" layoutY="300.0" prefHeight="30.0" prefWidth="440.0" />
+                                         <TextField fx:id="optionA3" layoutX="250.0" layoutY="350.0" prefHeight="30.0" prefWidth="440.0" text="正确" />
+                                         <TextField fx:id="optionB3" layoutX="250.0" layoutY="400.0" prefHeight="30.0" prefWidth="440.0" text="错误" />
+                                         <TextField fx:id="answer3" layoutX="250.0" layoutY="550.0" prefHeight="30.0" prefWidth="440.0" />
+
+                                         <Label layoutX="75.0" layoutY="50.0" styleClass="font-unit" text="编号:" />
+                                         <Label layoutX="75.0" layoutY="100.0" styleClass="font-unit" text="试题内容：" />
+                                         <Label layoutX="75.0" layoutY="300.0" styleClass="font-unit" text="图片名：" />
+                                         <Label layoutX="75.0" layoutY="350.0" styleClass="font-unit" text="选项1:" />
+                                         <Label layoutX="75.0" layoutY="400.0" styleClass="font-unit" text="选项2:" />
+                                         <Label layoutX="75.0" layoutY="550.0" styleClass="font-unit" text="正确答案:" />
+                                         <Label layoutX="75.0" layoutY="600.0" styleClass="font-unit" text="添加试题：" />
+                                         <Button layoutX="250.0" layoutY="605.0" mnemonicParsing="false" onMouseClicked="#addTFItem" prefHeight="35.0" prefWidth="190.0" text="添加试题" />
+                                 </children></AnchorPane>
+
+                        </content>
+                      </Tab>
+                      <Tab text="更新判断试题">
+                        <content>
+                          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                 <children>
+                                     <TextField fx:id="updateNumber2" layoutX="250.0" layoutY="50.0" prefHeight="30.0" prefWidth="440.0" />
+                                     <TextField fx:id="number4" layoutX="250.0" layoutY="150.0" prefHeight="30.0" prefWidth="440.0" />
+                                     <TextField fx:id="content4" layoutX="250.0" layoutY="200.0" prefHeight="80.0" prefWidth="440.0" />
+                                     <TextField fx:id="imageName4" layoutX="250.0" layoutY="300.0" prefHeight="30.0" prefWidth="440.0" />
+                                     <TextField fx:id="optionA4" layoutX="250.0" layoutY="350.0" prefHeight="30.0" prefWidth="440.0" />
+                                     <TextField fx:id="optionB4" layoutX="250.0" layoutY="400.0" prefHeight="30.0" prefWidth="440.0" />
+                                     <TextField fx:id="answer4" layoutX="250.0" layoutY="550.0" prefHeight="30.0" prefWidth="440.0" />
+                                     <Label layoutX="75.0" layoutY="50.0" styleClass="font-unit" text="需要更新题目编号:" />
+                                     <Label layoutX="75.0" layoutY="150.0" styleClass="font-unit" text="编号:" />
+                                     <Label layoutX="75.0" layoutY="200.0" styleClass="font-unit" text="试题内容：" />
+                                     <Label layoutX="75.0" layoutY="300.0" styleClass="font-unit" text="图片名：" />
+                                     <Label layoutX="75.0" layoutY="350.0" styleClass="font-unit" text="选项1:" />
+                                     <Label layoutX="75.0" layoutY="400.0" styleClass="font-unit" text="选项2:" />
+                                     <Label layoutX="75.0" layoutY="550.0" styleClass="font-unit" text="正确答案:" />
+                                     <Label layoutX="75.0" layoutY="600.0" styleClass="font-unit" text="添加试题：" />
+                                     <Button layoutX="250.0" layoutY="605.0" mnemonicParsing="false" onMouseClicked="#updateTFItem" prefHeight="35.0" prefWidth="190.0" text="更新题目" />
+                                     <Button layoutX="250.0" layoutY="100.0" mnemonicParsing="false" onMouseClicked="#QueryUpdateTF" prefHeight="35.0" prefWidth="190.0" text="查找题目" />
+                                 </children></AnchorPane>
+                        </content>
+                      </Tab>
+                        <Tab text="删除判断试题">
+                           <content>
+                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                 <children>
+                                     <TextField fx:id="deleteNumber2" layoutX="250.0" layoutY="200.0" prefHeight="30.0" prefWidth="440.0" />
+                                     <Label layoutX="75.0" layoutY="200.0" styleClass="font-unit" text="需要删除的题号:" />
+                                     <Button layoutX="250.0" layoutY="605.0" mnemonicParsing="false" onMouseClicked="#deleteTFItem" prefHeight="35.0" prefWidth="190.0" text="删除试题" />
+                                 </children></AnchorPane>
+                           </content>
+                        </Tab>
+                        <Tab text="查询判断试题">
+                           <content>
+                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                 <children>
+                                     <Button layoutX="72.0" layoutY="57.0" mnemonicParsing="false" onMouseClicked="#selectTFItem" prefHeight="35.0" prefWidth="190.0" text="查询全部判断试题" />
+                                 </children></AnchorPane>
+                           </content>
+                        </Tab>
+                    </tabs>
+                  </TabPane>
+               </content>
+          </Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</Pane>

@@ -1,0 +1,28 @@
+.body{
+    -fx-background-color:#1c92d2;
+    -fx-background-color:linear-gradient(to right, #f2fcfe, #1c92d2);
+}
+.root {
+    -fx-background-image: url('/sample/car.jpg');
+}
+
+.font-unit {
+    -fx-font-size: 18px;
+    -fx-font-weight: bold;
+    -fx-text-fill: blue;
+}
+
+.button{
+    -fx-background-color:
+            #ECECEC,
+            linear-gradient(#ECECEC 50%, #D5D5D5 100%),
+            radial-gradient(center 50% -40%, radius 200%, #ECECEC 45%, #D5D5D5 50%);
+    -fx-background-radius: 10;
+    -fx-background-insets: 0,1,1;
+    -fx-text-fill: black;
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 3, 0.0 , 0 , 1 );
+}
+.button:hover {
+    -fx-font-weight: bold;
+    -fx-opacity: 0.8;
+}
